@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"start": "gulp sass",
-		"watch": "gulp sass:watch",
+    "start": "gulp sass",
+    "watch": "gulp sass:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

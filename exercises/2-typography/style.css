@@ -1,34 +1,34 @@
 /* General setup */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0 auto;
-	max-width: 1400px;
-	min-width: 1000px;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 1000px;
 }
 
 /* Layout */
 
 section {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 
 aside {
-	float: left;
-	width: 30%;
+    float: left;
+    width: 30%;
 }
 
 nav {
-	float: left;
-	width: 20%;
+    float: left;
+    width: 20%;
 }
 
 footer {
-	clear: both;
+    clear: both;
 }
 
 header,
@@ -36,14 +36,14 @@ section,
 aside,
 nav,
 footer {
-	padding: 20px;
+    padding: 20px;
 }
 
 /* header and footer */
 header,
 footer {
-	border-bottom: 5px solid #a66;
-	border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    border-top: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */

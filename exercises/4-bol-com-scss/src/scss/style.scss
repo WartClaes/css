@@ -20,45 +20,45 @@
 
 html,
 body {
-	background-color: #F0F0F0;
-	font-family: $font-family;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+    background-color: #F0F0F0;
+    font-family: $font-family;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-	color: $color-primary;
-	font-size: 32px;
-	margin: 0;
-	overflow: hidden;
+    color: $color-primary;
+    font-size: 32px;
+    margin: 0;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 h2 {
-	color: $color-neutral;
-	font-size: 28px;
-	margin: 0;
+    color: $color-neutral;
+    font-size: 28px;
+    margin: 0;
 }
 
 .body--dialog-open {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 @include tablet {
-	.grid {
-		display: grid;
-		grid-template-columns: 64px 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "sidebar container";
-		height: 100%;
-	}
+    .grid {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "sidebar container";
+        height: 100%;
+    }
 }
 
 @include desktop {
-	.grid {
-		grid-template-columns: 320px 1fr 320px;
-		grid-template-areas: "sidebar container cart";
-	}
+    .grid {
+        grid-template-columns: 320px 1fr 320px;
+        grid-template-areas: "sidebar container cart";
+    }
 }
