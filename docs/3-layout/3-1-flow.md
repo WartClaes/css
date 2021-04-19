@@ -24,19 +24,19 @@ margin or padding is applied. The margin and padding will only push the text awa
 
 ```html
 <div>
-	Here is some text
-	<div class="inline">and i'm inline.</div>
-	And here is some more text.
+    Here is some text
+    <div class="inline">and i'm inline.</div>
+    And here is some more text.
 <div>
 ```
 
 ```css
 .inline {
-	background-color: #f00;
-	border: solid 5px hotpink;
-	display: inline;
-	margin: 10px;
-	padding: 10px;
+    background-color: #f00;
+    border: solid 5px hotpink;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
 }
 ```
 
@@ -51,20 +51,20 @@ last line of your element will be inline with the text. You will also push other
 
 ```html
 <div>
-	Here is some text
-	<div class="inline-block">and i'm inline block.</div>
-	And here is some more text.
+    Here is some text
+    <div class="inline-block">and i'm inline block.</div>
+    And here is some more text.
 <div>
 ```
 
 ```css
 .inline-block {
-	background-color: #f00;
-	border: solid 5px hotpink;
-	display: inline-block;
-	margin: 10px;
-	padding: 10px;
-	width: 30px;
+    background-color: #f00;
+    border: solid 5px hotpink;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 30px;
 }
 ```
 
@@ -79,23 +79,23 @@ the following element to start on a new line. By default a block elements takes 
 
 ```html
 <div>
-	Here is some text
- 	<div class="block">and i'm block. </div>
-	And here is some more text.
+    Here is some text
+     <div class="block">and i'm block. </div>
+    And here is some more text.
 <div>
 ```
 
 ```css
 .block {
-	background-color: #f00;
-	border: solid 5px hotpink;
-	/*
-		could be removed, because UA will set it as default
-		value for many container elements (e.g. div/p/...)
-	*/
-	display: block;
-	margin: 10px;
-	padding: 10px;
+    background-color: #f00;
+    border: solid 5px hotpink;
+    /*
+        could be removed, because UA will set it as default
+        value for many container elements (e.g. div/p/...)
+    */
+    display: block;
+    margin: 10px;
+    padding: 10px;
 }
 ```
 
@@ -110,11 +110,11 @@ clear how we'll do this.
 
 ```html
 <div class="table">
-	<div class="row">
-		<div class="cell">First cell</div>
-		<div class="cell">Second cell</div>
-		<div class="cell">Third cell</div>
-	</div>
+    <div class="row">
+        <div class="cell">First cell</div>
+        <div class="cell">Second cell</div>
+        <div class="cell">Third cell</div>
+    </div>
 </div>
 ```
 
@@ -124,15 +124,15 @@ Using the HTML above we'll start by creating a simple table layout.
 
 ```css
 .table {
-	display: table;
+    display: table;
 }
 
 .row {
-	display: table-row;
+    display: table-row;
 }
 
 .cell {
-	display: table-cell;
+    display: table-cell;
 }
 ```
 
@@ -150,8 +150,8 @@ Because our elements are now behaving as table elements, we're also able to use 
 
 ```css
 .table {
-	display: table;
-	table-layout: fixed;
+    display: table;
+    table-layout: fixed;
 }
 ```
 
@@ -165,13 +165,13 @@ space equally.
 
 ```css
 .table {
-	border-collapse: separate | collapse;
-	display: table;
+    border-collapse: separate | collapse;
+    display: table;
 }
 
 .table-cell {
-	display: table-cell;
-	border: solid 1px #f00;
+    display: table-cell;
+    border: solid 1px #f00;
 }
 ```
 
@@ -189,7 +189,7 @@ the `vertical-align` property and it will actually do something!
 
 ```css
 .table-cell {
-	display: table-cell;
-	vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 ```

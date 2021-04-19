@@ -51,9 +51,9 @@ it on both sides.
 
 ```css
 .wrapper::after {
-	clear: both;
-	content: '';
-	display: block;
+    clear: both;
+    content: '';
+    display: block;
 }
 ```
 
@@ -64,6 +64,6 @@ Since it is CSS and a fairly new property, always check your browser support.
 
 ```css
 .wrapper {
-	display: flow-root;
+    display: flow-root;
 }
 ```

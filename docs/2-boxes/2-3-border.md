@@ -29,11 +29,11 @@ The `color` and `width` properties are quite clear on their own. They set the wi
 
 ```css
 .foo {
-	border: 1px solid #f00;
-	...
-	border-color: #f00;
-	border-style: solid;
-	border-width: 1px;
+    border: 1px solid #f00;
+    ...
+    border-color: #f00;
+    border-style: solid;
+    border-width: 1px;
 }
 ```
 
@@ -49,7 +49,7 @@ But since it's available in browsers, it could not be easier to set them on a bo
 
 ```css
 .foo {
-	border-radius: 10px;
+    border-radius: 10px;
 }
 ```
 
@@ -60,8 +60,8 @@ value to the property. It follow roughly the same rules as padding and margin.
 
 ```css
 .foo {
-	/* [top-left] [top-right] [bottom-right] [bottom-left] */
-	border-radius: 16px 8px 4px 2px;
+    /* [top-left] [top-right] [bottom-right] [bottom-left] */
+    border-radius: 16px 8px 4px 2px;
 }
 ```
 
@@ -72,6 +72,6 @@ Beside that you can also define eliptical borders by providing 2 radii, seperate
 
 ```css
 .foo {
-	border-radius: 10px / 20px;
+    border-radius: 10px / 20px;
 }
 ```

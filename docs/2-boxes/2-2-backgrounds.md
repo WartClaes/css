@@ -21,7 +21,7 @@ Sets the color of the background. Default is `transparent`.
 
 ```css
 .foo {
-	background-color: #f00;
+    background-color: #f00;
 }
 ```
 
@@ -34,7 +34,7 @@ and the color will be visible if the image fails to load.
 
 ```css
 .foo {
-	background-image: url('image.png');
+    background-image: url('image.png');
 }
 ```
 
@@ -46,7 +46,7 @@ Determine how the background image is repeated. Default is `repeat`. Other optio
 
 ```css
 .foo {
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 ```
 
@@ -59,8 +59,8 @@ Other values are, for `x`: `left`, `center` and `right`, and for `y`: `top`, `ce
 
 ```css
 .foo {
-	background-position: 50px 25px;
-	background-position: left bottom;
+    background-position: 50px 25px;
+    background-position: left bottom;
 }
 ```
 
@@ -78,7 +78,7 @@ As a minimum, the function takes 3 parameters : `direction`, `startColor`, `endC
 
 ```css
 .foo {
-	background-image: linear-gradient(to left, red, blue);
+    background-image: linear-gradient(to left, red, blue);
 }
 ```
 
@@ -89,8 +89,8 @@ where the color needs to be applied.
 
 ```css
 .foo {
-	background-image: linear-gradient(to left, red, green, yellow, blue);
-	background-image: linear-gradient(to left, red, green 10%, blue);
+    background-image: linear-gradient(to left, red, green, yellow, blue);
+    background-image: linear-gradient(to left, red, green 10%, blue);
 }
 ```
 
@@ -100,7 +100,7 @@ The direction can also be described in degrees.
 
 ```css
 .foo {
-	background-image: linear-gradient(90deg, red, blue);
+    background-image: linear-gradient(90deg, red, blue);
 }
 ```
 
@@ -114,9 +114,9 @@ A single element can have multiple backgrounds. The first one will be at the top
 
 ```css
 .foo {
-	background-image:
-		linear-gradient(to left, yellow, blue),
-		linear-gradient(to top, red, green),
-		url("image.png");
+    background-image:
+        linear-gradient(to left, yellow, blue),
+        linear-gradient(to top, red, green),
+        url("image.png");
 }
 ```

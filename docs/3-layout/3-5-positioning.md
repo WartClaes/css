@@ -72,8 +72,8 @@ In order for this to work one of `top`, `right`, `bottom` or `left` should be se
 
 ```css
 .foo {
-	left: 30px;
-	top: 30px;
+    left: 30px;
+    top: 30px;
 }
 ```
 
@@ -92,6 +92,6 @@ By setting the `z-index` you can overrule the stacking order. It accepts a unitl
 
 ```css
 .foo {
-	z-index: 1;
+    z-index: 1;
 }
 ```

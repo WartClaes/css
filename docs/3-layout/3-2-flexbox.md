@@ -36,7 +36,7 @@ To start a flexbox grid, we must first tell our parent element to behave as a fl
 
 ```css
 .row {
-	display: flex | inline-flex;
+    display: flex | inline-flex;
 }
 ```
 
@@ -62,7 +62,7 @@ element what to do when to many children are inside it.
 
 ```css
 .row {
-	flex-wrap: nowrap | wrap | wrap-reverse;
+    flex-wrap: nowrap | wrap | wrap-reverse;
 }
 ```
 
@@ -77,7 +77,7 @@ to float on the left or right side? Or do we want them to be equally divided in 
 
 ```css
 .row {
-	justify-content: flex-start | flex-end | center | space-between | space-around;
+    justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 ```
 
@@ -93,7 +93,7 @@ Besides of aligning our items horizontally we also want to align our items verti
 
 ```css
 .row {
-	align-items: flex-start | flex-end | center | baseline | stretch;
+    align-items: flex-start | flex-end | center | baseline | stretch;
 }
 ```
 
@@ -111,7 +111,7 @@ this behaviour by setting the align-content property.
 
 ```css
 .row {
-	align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 ```
 
@@ -133,8 +133,8 @@ having to change the DOM. This allows us to, for example on a mobile device, rea
 
 ```css
 .column {
-	/* any number, the lowest value gets displayed first */
-	order: 1;
+    /* any number, the lowest value gets displayed first */
+    order: 1;
 }
 ```
 
@@ -145,8 +145,8 @@ It makes an item grow relative to other elements.
 
 ```css
 .column {
-	/* any number */
-	flex-grow: 1;
+    /* any number */
+    flex-grow: 1;
 }
 ```
 
@@ -154,25 +154,25 @@ It makes an item grow relative to other elements.
 
 ```html
 <div class="row">
-	<div class="column">1</div>
-	<div class="column bigger">2</div>
-	<div class="column">3</div>
+    <div class="column">1</div>
+    <div class="column bigger">2</div>
+    <div class="column">3</div>
 </div>
 ```
 
 ```css
 .row {
-	display: flex;
+    display: flex;
 }
 
 .column {
-	/* this gives every column an equal width inside the container */
-	flex-grow: 1;
+    /* this gives every column an equal width inside the container */
+    flex-grow: 1;
 }
 
 .bigger {
-	/* this will make the element twice as big as normal columns */
-	flex-grow: 2;
+    /* this will make the element twice as big as normal columns */
+    flex-grow: 2;
 }
 ```
 
@@ -187,8 +187,8 @@ items will never have to 'shrink'.
 
 ```css
 .column {
-	/* any number, this column will shrink twice as hard as other columns */
-	flex-shrink: 2;
+    /* any number, this column will shrink twice as hard as other columns */
+    flex-shrink: 2;
 }
 ```
 
@@ -198,8 +198,8 @@ This property will give our element a default size, before distributing the avai
 
 ```css
 .column {
-	/* any length value */
-	flex-basis: 100px;
+    /* any length value */
+    flex-basis: 100px;
 }
 ```
 
@@ -210,7 +210,7 @@ So one item could align itself differently then the other items in the container
 
 ```css
 .column {
-	align-self: flex-start | flex-end | center | baseline | stretch;
+    align-self: flex-start | flex-end | center | baseline | stretch;
 }
 ```
 

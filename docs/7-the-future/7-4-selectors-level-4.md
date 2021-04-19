@@ -35,12 +35,12 @@ nav a {
 
 ```css
 a:where(:not(:hover)) {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 nav a {
-	/* Works now! */
-	text-decoration: underline;
+    /* Works now! */
+    text-decoration: underline;
 }
 ```
 

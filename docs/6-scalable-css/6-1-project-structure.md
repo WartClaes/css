@@ -120,15 +120,15 @@ a navbar. What if we try to follow the feature based approach just as strict for
 
 ```css
 body {
-	font-family: Arial;
+    font-family: Arial;
 }
 
 h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 h2 {
-	font-size: 24px;
+    font-size: 24px;
 }
 ```
 
@@ -136,14 +136,14 @@ h2 {
 
 ```css
 .btn {
-	background-color: hotpink;
-	border-radius: 3px;
-	color: white;
-	padding: 10px;
+    background-color: hotpink;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
 }
 
 .btn-primary {
-	background-color: rebeccapurple;
+    background-color: rebeccapurple;
 }
 ```
 
@@ -151,12 +151,12 @@ h2 {
 
 ```css
 .navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 50px;
-	background-color: #f00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #f00;
 }
 ```
 

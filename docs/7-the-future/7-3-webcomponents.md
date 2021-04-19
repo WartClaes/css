@@ -34,12 +34,12 @@ The easiest way to create an element with a Shadow root is the following:
 
 ```javascript
 const root = document.querySelector('.shadow').attachShadow({
-	mode: 'open'
+    mode: 'open'
 });
 
 root.innerHTML = `
-	<style>h3 { color: red; }</style>
-	<h3>Shadow DOM</h3>
+    <style>h3 { color: red; }</style>
+    <h3>Shadow DOM</h3>
 `;
 ```
 
@@ -58,24 +58,24 @@ This has the advantage that you don't need lengthy selectors to specify that you
 
 ```html
 #shadow root
-	<style>
-		.foo {
-			color: #f00;
-		}
-	</style>
-	<div class="foo">
-		...
-	</div>
+    <style>
+        .foo {
+            color: #f00;
+        }
+    </style>
+    <div class="foo">
+        ...
+    </div>
 ```
 
 The same goes for complete stylesheets
 
 ```html
 #shadow root
-	<link rel="stylesheet" href="style.css">
-	<div class="foo">
-		...
-	</div>
+    <link rel="stylesheet" href="style.css">
+    <div class="foo">
+        ...
+    </div>
 ```
 
 ---
@@ -86,12 +86,12 @@ Now we know how to apply styling to elements inside the component, we might need
 
 ```html
 #shadow root
-	<style>
-		:host {
-			/* By default custom element are displayed inline */
-			display: block;
-		}
-	</style>
+    <style>
+        :host {
+            /* By default custom element are displayed inline */
+            display: block;
+        }
+    </style>
 ```
 
 Keep in mind that styles applied to the element from the outside get a higher specificity then `:host` so the user can override the styles easily.
@@ -100,46 +100,46 @@ By passing an argument to the host selector you can target your host when it mat
 
 ```html
 #shadow root
-	<style>
-		:host {
-			display: block;
-			will-change: opacity;
-		}
+    <style>
+        :host {
+            display: block;
+            will-change: opacity;
+        }
 
-		:host(:hover) {
-			background-color: hotpink;
-		}
+        :host(:hover) {
+            background-color: hotpink;
+        }
 
-		:host([disabled]) {
-			background-color: #ccc;
-			opacity: .4;
-		}
+        :host([disabled]) {
+            background-color: #ccc;
+            opacity: .4;
+        }
 
-		:host(.cyan) {
-			background-color: cyan;
-		}
-	</style>
+        :host(.cyan) {
+            background-color: cyan;
+        }
+    </style>
 ```
 
 But the magic continues. The host can also be targetted when it is used inside a specific context. By using `:host-context(<selector>)` the styling will be applied when the component is an ancestor of an element that matches the given selector.
 
 ```html
 #shadow root
-	<style>
-		:host {
-			background-color: white;
-		}
+    <style>
+        :host {
+            background-color: white;
+        }
 
-		:host-context(.darkmode) {
-			background-color: #444;
-		}
-	</style>
+        :host-context(.darkmode) {
+            background-color: #444;
+        }
+    </style>
 ```
 
 ```html
 <body class="darkmode">
-	<foo>
-	</foo>
+    <foo>
+    </foo>
 </body>
 ```
 
@@ -157,23 +157,23 @@ You can also create named slots so multiple slot locations are possible.
 
 ```html
 #shadow root
-	<div class="toybox">
-		<slot>
-			No toys found in toybox
-		</slot>
-	</div>
-	<div class="bed">bed
-		<slot name="bed">No toys found on the bed</slot>
-	</div>
+    <div class="toybox">
+        <slot>
+            No toys found in toybox
+        </slot>
+    </div>
+    <div class="bed">bed
+        <slot name="bed">No toys found on the bed</slot>
+    </div>
 ```
 
 ```html
 <room>
-	<img src="rex.png">
-	<img src="woody.png" slot="bed">
-	<span slot="bed">
-		<span class="name">alien</span>
-	</span>
+    <img src="rex.png">
+    <img src="woody.png" slot="bed">
+    <span slot="bed">
+        <span class="name">alien</span>
+    </span>
 </room>
 ```
 
@@ -181,11 +181,11 @@ By using `::slotted(<selector>)` you can style elements inside the `<slot>`.
 
 ```html
 #shadow root
-	<style>
-		#slot::slotted(span) {
-			font-weight: bold;
-		}
-	</style>
+    <style>
+        #slot::slotted(span) {
+            font-weight: bold;
+        }
+    </style>
 ```
 
 Keep in mind that because the element is not moved inside the shadow DOM, it still has the styling applied from the light DOM. Those elements can recieve additional styling from inside the shadow DOM.
@@ -203,11 +203,11 @@ The easiest way to apply styles to a shadowed element is by applying it to the e
 
 ```css
 x-foo {
-	background-color: red;
+    background-color: red;
 }
 
 x-foo:hover {
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
 ```
 
@@ -221,17 +221,17 @@ One way to do this is using CSS custom properties. By creating variables that ca
 
 ```css
 #light DOM
-	x-foo {
-		--x-foo-background: red;
-	}
+    x-foo {
+        --x-foo-background: red;
+    }
 ```
 
 ```css
 #shadow DOM
-	:host {
-		background-color: var(--x-foo-background, blue);
-		border-radius: 10px;
-	}
+    :host {
+        background-color: var(--x-foo-background, blue);
+        border-radius: 10px;
+    }
 ```
 
 
@@ -248,10 +248,10 @@ With the `::part` psuedo element you can tell the user which parts of the shadow
 
 ```html
 <x-foo>
-	#shadow root
-		<div part="some-box">...</div>
-		<span part="some-text">...</span>
-		<div>...</div>
+    #shadow root
+        <div part="some-box">...</div>
+        <span part="some-text">...</span>
+        <div>...</div>
 </x-foo>
 ```
 
@@ -268,12 +268,12 @@ x-foo::part(some-box) span { /* won't work */ }
 
 ```html
 <x-bar>
-	#shadow root
-		<x-foo></x-foo>
+    #shadow root
+        <x-foo></x-foo>
 </x-bar>
 
 <style>
-	x-bar::part(some-box) { /* won't work */ }
+    x-bar::part(some-box) { /* won't work */ }
 </style>
 ```
 
@@ -281,8 +281,8 @@ To resolve the last issue, it will be possible to forward parts to other element
 
 ```html
 <x-bar>
-	#shadow-root
-    	<x-foo part="* => bar-*"></x-foo>
+    #shadow-root
+        <x-foo part="* => bar-*"></x-foo>
 </x-bar>
 ```
 
@@ -296,8 +296,8 @@ It is also allowed to keep the same name, but then you need to specify them all:
 
 ```html
 <x-bar>
-	#shadow-root
-		<x-foo exportparts="some-text => some-text, some-box => some-box"></x-foo>
+    #shadow-root
+        <x-foo exportparts="some-text => some-text, some-box => some-box"></x-foo>
 </x-bar>
 ```
 
@@ -305,14 +305,14 @@ So if you want all your texts in all different components styled the same way, y
 
 ```html
 <submit-form>
-	#shadow-root
-    	<x-form exportparts="some-text => some-text, some-box => some-box">
-      		#shadow-root
-        		<x-bar exportparts="some-text => some-text, some-box => some-box">
-          			#shadow-root
-            			<x-foo exportparts="some-text => some-text, some-box => some-box"></x-foo>
-        		</x-bar>
-		</x-form>
+    #shadow-root
+        <x-form exportparts="some-text => some-text, some-box => some-box">
+              #shadow-root
+                <x-bar exportparts="some-text => some-text, some-box => some-box">
+                      #shadow-root
+                        <x-foo exportparts="some-text => some-text, some-box => some-box"></x-foo>
+                </x-bar>
+        </x-form>
 </submit-form>
 ```
 
@@ -333,10 +333,10 @@ But as you can notice it is a lot of work for the person who creates the compone
 
 ```html
 <x-bar>
-	#shadow-root
-		<x-foo></x-foo>
-		<x-foo></x-foo>
-		<x-foo></x-foo>
+    #shadow-root
+        <x-foo></x-foo>
+        <x-foo></x-foo>
+        <x-foo></x-foo>
 </x-bar>
 ```
 
@@ -408,33 +408,33 @@ Inhertibale styles keep on inheriting inside the shadow DOM. So if you want to r
 
 ```html
 <style>
-	div {
-		padding: 10px;
-		background: red;
-		font-size: 25px;
-		text-transform: uppercase;
-		color: white;
-	}
+    div {
+        padding: 10px;
+        background: red;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: white;
+    }
 </style>
 <div>
-	<p>I'm outside the element (big/white)</p>
-	<my-element>Light DOM content is also affected.</my-element>
+    <p>I'm outside the element (big/white)</p>
+    <my-element>Light DOM content is also affected.</my-element>
 </div>
 
 <script>
 const el = document.querySelector('my-element');
 el.attachShadow({mode: 'open'}).innerHTML = `
-	<style>
-		:host {
-			/* 1st rule so subsequent properties are reset. */
-			all: initial;
-			display: block;
-			background: white;
-		}
-	</style>
-	<p>
-		resetted values with all: initial.
-	</p>
+    <style>
+        :host {
+            /* 1st rule so subsequent properties are reset. */
+            all: initial;
+            display: block;
+            background: white;
+        }
+    </style>
+    <p>
+        resetted values with all: initial.
+    </p>
 `;
 </script>
 ```

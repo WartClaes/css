@@ -20,8 +20,8 @@ The first thing we'll need to do is create a container element for our grid syst
 
 ```css
 .grid {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 ```
 
@@ -37,8 +37,8 @@ approach so our 'default' cells will have the small suffix.
 
 ```css
 .cell {
-	box-sizing: border-box;
-	padding: 5px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 ```
 
@@ -48,11 +48,11 @@ borders into account when setting the width of the elements.
 
 ```css
 .cell-s-1 {
-	flex-basis: 8.33%;
+    flex-basis: 8.33%;
 }
 
 .cell-s-2 {
-	flex-basis: 16.66%;
+    flex-basis: 16.66%;
 }
 
 ...
@@ -69,11 +69,11 @@ really handy if a grid comes with some default classes for these offsets.
 
 ```css
 .offset-s-1 {
-	margin-left: 8.33%;
+    margin-left: 8.33%;
 }
 
 .offset-s-2 {
-	margin-left: 16.66%;
+    margin-left: 16.66%;
 }
 
 ...
@@ -91,55 +91,55 @@ apply the correct width to our element.
 
 ```css
 .cell-s-1 {
-	flex-basis: 8.33%;
+    flex-basis: 8.33%;
 }
 
 .cell-s-2 {
-	flex-basis: 16.66%;
+    flex-basis: 16.66%;
 }
 
 .offset-s-1 {
-	margin-left: 8.33%;
+    margin-left: 8.33%;
 }
 
 .offset-s-2 {
-	margin-left: 16.66%;
+    margin-left: 16.66%;
 }
 
 @media (min-width: 768px) {
-	.cell-m-1 {
-		flex-basis: 8.33%;
-	}
+    .cell-m-1 {
+        flex-basis: 8.33%;
+    }
 
-	.cell-m-2 {
-		flex-basis: 16.66%;
-	}
+    .cell-m-2 {
+        flex-basis: 16.66%;
+    }
 
-	.offset-m-1 {
-		margin-left: 8.33%;
-	}
+    .offset-m-1 {
+        margin-left: 8.33%;
+    }
 
-	.offset-m-2 {
-		margin-left: 16.66%;
-	}
+    .offset-m-2 {
+        margin-left: 16.66%;
+    }
 }
 
 @media (min-width: 1024px) {
-	.cell-l-1 {
-		flex-basis: 8.33%;
-	}
+    .cell-l-1 {
+        flex-basis: 8.33%;
+    }
 
-	.cell-l-2 {
-		flex-basis: 16.66%;
-	}
+    .cell-l-2 {
+        flex-basis: 16.66%;
+    }
 
-	.offset-l-1 {
-		margin-left: 8.33%;
-	}
+    .offset-l-1 {
+        margin-left: 8.33%;
+    }
 
-	.offset-l-2 {
-		margin-left: 16.66%;
-	}
+    .offset-l-2 {
+        margin-left: 16.66%;
+    }
 }
 
 ...
@@ -157,42 +157,42 @@ Sass (.scss) will make it so much easier to create a grid system, since we can l
 $cells: 12;
 $gutter: 10px;
 $breakpoints: (
-	's': 'default',
-	'm': '(min-width: 768px)',
-	'l': '(min-width: 1024px)'
+    's': 'default',
+    'm': '(min-width: 768px)',
+    'l': '(min-width: 1024px)'
 );
 
 .grid {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cell {
-	box-sizing: border-box;
-	padding: $gutter / 2;
+    box-sizing: border-box;
+    padding: $gutter / 2;
 }
 
 @mixin grid($breakpoint-name) {
-	@for $i from 1 through $cells {
-		$size: 100%/$cells*$i;
+    @for $i from 1 through $cells {
+        $size: 100%/$cells*$i;
 
-		.cell-#{$breakpoint-name}-#{$i}{
-			flex-basis: $size;
-		}
+        .cell-#{$breakpoint-name}-#{$i}{
+            flex-basis: $size;
+        }
 
-		.offset-#{$breakpoint-name}-#{$i}{
-			margin-left: $size;
-		}
-	}
+        .offset-#{$breakpoint-name}-#{$i}{
+            margin-left: $size;
+        }
+    }
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
-	@if $breakpoint == default {
-		@include grid($breakpoint-name);
-	} @else {
-		@media #{$breakpoint} {
-			@include grid($breakpoint-name);
-		}
-	}
+    @if $breakpoint == default {
+        @include grid($breakpoint-name);
+    } @else {
+        @media #{$breakpoint} {
+            @include grid($breakpoint-name);
+        }
+    }
 }
 ```

@@ -59,9 +59,9 @@ animate and transition it. Something that is not possible with the css variables
 
 ```javascript
 CSS.registerProperty({
-	name: "--my-color",
-	syntax: "<color>",
-	initialValue: "black"
+    name: "--my-color",
+    syntax: "<color>",
+    initialValue: "black"
 });
 ```
 

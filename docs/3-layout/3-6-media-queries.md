@@ -105,13 +105,13 @@ CSS that is only applicable when the query matches your device.
 
 ```css
 .example {
-	background-color: hotpink;
+    background-color: hotpink;
 }
 
 @media screen and (min-width: 760px) {
-	.example {
-		background-color: #f00;
-	}
+    .example {
+        background-color: #f00;
+    }
 }
 ```
 
@@ -129,7 +129,7 @@ advise to use the media attribute, not only is it more performant but your code 
 
 ```css
 .example {
-	background-color: hotpink;
+    background-color: hotpink;
 }
 ```
 
@@ -137,7 +137,7 @@ advise to use the media attribute, not only is it more performant but your code 
 
 ```css
 .example {
-	background-color: #f00;
+    background-color: #f00;
 }
 ```
 
@@ -145,13 +145,13 @@ advise to use the media attribute, not only is it more performant but your code 
 
 ```html
 <html>
-	<head>
-		<link rel="stylesheet" href="style.css"/>
-		<link rel="stylesheet" href="style-small.css" media="screen and (max-width: 760px)"/>
-	</head>
-	<body>
-		<div class="example">Resize me please!</div>
-	</body>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style-small.css" media="screen and (max-width: 760px)"/>
+    </head>
+    <body>
+        <div class="example">Resize me please!</div>
+    </body>
 </html>
 ```
 
@@ -169,20 +169,20 @@ In adaptive design we use our breakpoints to create new **fixed** layouts.
 
 ```css
 .example {
-	margin: 0 auto;
-	width: 1400px;
+    margin: 0 auto;
+    width: 1400px;
 }
 
 @media (max-width: 1000px) {
-	.example {
-		width: 960px;
-	}
+    .example {
+        width: 960px;
+    }
 }
 
 @media (max-width: 800px) {
-	.example {
-		width: 760px;
-	}
+    .example {
+        width: 760px;
+    }
 }
 ```
 

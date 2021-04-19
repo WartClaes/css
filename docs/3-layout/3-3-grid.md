@@ -69,7 +69,7 @@ These properties define the columns and the rows of the grid. The values passed 
 ```css
 .parent {
     grid-template-columns: 50% 50px auto;
-	/* multiple names are also a possibility */
+    /* multiple names are also a possibility */
     grid-template-rows: [foo] 50% [bar] 50px [baz quux] auto;
 }
 ```

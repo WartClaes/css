@@ -29,8 +29,8 @@
 
 ## Chapter 4: Animations and Transitions
 
-* [Transitions](docs/4-animation-and-transitions/4-1-transitions.md)
-* [Animations](docs/4-animation-and-transitions/4-2-animations.md)
+* [Transitions](docs/4-animations-and-transitions/4-1-transitions.md)
+* [Animations](docs/4-animations-and-transitions/4-2-animations.md)
 
 ## Chapter 5: Deep Dive
 
@@ -46,10 +46,10 @@
 
 ## Chapter 7: The Future
 
-* [BEM](docs/7-the-future/7-1-houdini.md)
-* [BEM](docs/7-the-future/7-2-subgrid.md)
-* [BEM](docs/7-the-future/7-3-webcomponents.md)
-* [BEM](docs/7-the-future/7-4-selectors-level-4.md)
+* [Houdini](docs/7-the-future/7-1-houdini.md)
+* [Subgrid](docs/7-the-future/7-2-subgrid.md)
+* [Webcomponents](docs/7-the-future/7-3-webcomponents.md)
+* [Selectors level 4](docs/7-the-future/7-4-selectors-level-4.md)
 
 ## Resources
 

@@ -98,10 +98,10 @@ A timing function can be set by using `animation-timing-function`. This sets the
     animation-name: foo;
     animation-duration: 1s;
     /*
-		possible values:
-			linear | ease | ease-in | ease-out | ease-in-out |
-			cubic-bezier(n,n,n,n) | initial | inherit
-		*/
+        possible values:
+            linear | ease | ease-in | ease-out | ease-in-out |
+            cubic-bezier(n,n,n,n) | initial | inherit
+        */
     animation-timing-function: ease-in-out;
 }
 ```
