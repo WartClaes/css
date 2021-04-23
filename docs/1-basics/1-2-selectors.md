@@ -201,7 +201,7 @@ The attribute selectors allow you to select elements with specific attributes. T
 
 ## Pseudo classes
 
-A pseudo class is a selector used to select an element in a certain state or context. For example selecting all disabled input elements or hovered buttons can be done with pseudo classes
+A pseudo class is a selector used to select an element in a certain state or context. For example selecting all disabled input elements or hovered buttons can be done with pseudo classes.
 
 > \[TIP\] It is highly recommended to prefix these selectors with only one semicolon.
 
@@ -329,7 +329,7 @@ To do that the browser starts matching the selector on the right hand side, maki
 
 ### Selector list
 
-List of multiple selectors. Applying the style on all elements that match one or more of the selectors/
+List of multiple selectors. Applying the style on all elements that match one or more of the selectors.
 
 #### Example
 
@@ -438,4 +438,3 @@ The general sibling selector selects all elements that are siblings of a specifi
     padding: 10px;
 }
 ```
-
