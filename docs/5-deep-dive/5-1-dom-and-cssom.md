@@ -1,4 +1,4 @@
-## 5.1 DOM and CSSOM
+# 5.1 DOM and CSSOM
 
 Before the browser can render the page it needs to construct the DOM and CSSOM trees. In this chapter we will take a
 closer look at both object models.
