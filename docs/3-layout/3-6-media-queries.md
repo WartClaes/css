@@ -1,4 +1,4 @@
-## 3.6 Media Queries
+# 3.6 Media Queries
 
 In this chapter we'll find out what we can achieve with media queries.
 
