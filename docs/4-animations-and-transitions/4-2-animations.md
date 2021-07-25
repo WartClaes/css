@@ -1,4 +1,4 @@
-## 4.2 Animations
+# 4.2 Animations
 
 The difference between the two is that a transition is there to alter the appereance of an element when a state change
 happens (eg. hover, focus, ...).
