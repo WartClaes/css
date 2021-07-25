@@ -1,4 +1,4 @@
-## 7.1 Houdini
+# 7.1 Houdini
 
 The biggest complain with CSS? I have this awesome new thing called _favorite CSS thing here_ but I can't use it because
 of browser support. Take Grid Layout for example. The initial idea for the specification dates from november 2012.
