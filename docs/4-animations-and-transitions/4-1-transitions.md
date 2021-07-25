@@ -1,4 +1,4 @@
-## 5.1 Transitions
+# 4.1 Transitions
 
 Transitions and animations are both a CSS3 specification.
 
